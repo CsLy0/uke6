@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forLoopMedString</title>
+</head>
+<body>
+    <div>Vokaler
+        <div id="letters"></div>
+            <button onclick="printVocals('aeiouyæøå')">Print letters</button>
+        </div>
+
+        <script>
+            function printVocals(inputString) {
+                let aCount = 0;
+                let eCount = 0;
+                let iCount = 0;
+                let oCount = 0;
+                let uCount = 0;
+                let yCount = 0;
+                let æCount = 0;
+                let øCount = 0;
+                let åCount = 0;
+
+                for(let aCounter=0; aCounter<=inputString.length; aCounter++){
+                    let char = inputString.charAt(aCounter);
+                    if (char === 'a') aCount++;
+                    else if (char === 'e') eCount++;
+                    else if (char === 'i') iCount++;
+                    else if (char === 'o') oCount++;
+                    else if (char === 'u') uCount++;
+                    else if (char === 'y') yCount++;
+                    else if (char === 'æ') æCount++;
+                    else if (char === 'ø') øCount++;
+                    else if (char === 'å') åCount++;
+                }
+
+                let text = `a: ${aCount}, e: ${eCount}, i: ${iCount}, o: ${oCount}, u: ${uCount}, y: ${yCount}, æ: ${æCount}, ø: ${øCount}, å: ${åCount}`;
+                document.getElementById("letters").innerHTML = text;
+            }
+
+        </script>
+</body>
+</html>
