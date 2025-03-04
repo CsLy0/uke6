@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egenkoding</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<h1>EgetProsjekt</h1>
+
+<div class="container">
+    <div class="left-container">
+        <div class="image-container">
+    <img src="mage.jpg" alt="Fighter">
+    <div id="health-bar-container">
+        <div id="health-bar">
+            <span id="health-bar-text">100%</span>
+    </div>
+</div>
+
+<div class="icon-container" id="icon-container">
+    <img src="protectmage.jpg" alt="Icon" class="icon-mage">
+</div>
+<div id="prayer-bar-container">
+            <div id="prayer-bar">
+                <span id="prayer-bar-text">99</span>
+            </div>
+        </div>
+    </div>
+<button class="attack-button" onclick="startAutoAttack()">Attack</button>
+<button class="prayer-bar-button" onclick="activatePrayer()">Prayer</button>
+</div>
+<div class="middle-container">
+<div class="grid-container">
+    <div class="slot">
+        <img src="ancestralhat.jpg" alt="Helm" class="slot-image">
+    </div>
+    <div class="slot">
+        <img src="zamorakcape.jpg" alt="Cape" class="slot-image">
+    </div>
+    <div class="slot">
+        <img src="occultneck.jpg" alt="Necklace" class="slot-image">
+    </div>
+    <div class="slot">
+        <img src="blessing.jpg" alt="Arrows" class="slot-image">
+    </div>
+    <div class="slot">
+        <img src="tumeken.jpg" alt="Weapon" class="slot-image">
+    </div>
+    <div class="slot">
+        <img src="ancestraltop.jpg" alt="Body" class="slot-image">
+    </div>
+    <div class="slot">Shield</div>
+    <div class="slot">
+        <img src="ancestalbottom.jpg" alt="Legs" class="slot-image">
+    </div>
+    <div class="slot">
+        <img src="torment.jpg" alt="Gloves" class="slot-image">
+    </div>
+    <div class="slot">
+        <img src="eternal.jpg" alt="Boots" class="slot-image">
+    </div>
+    <div class="slot">
+        <img src="magus.jpg" alt="Ring" class="slot-image">
+    </div>
+</div>
+</div>
+<div class="right-container">
+<div class="inventory-container">
+    <div class="inventory-slot" data-item="anglerfish">
+        <img src="anglerfish.jpg" alt="anglerfish" class="inventory-image">
+    </div>
+        <div class="inventory-slot" data-item="anglerfish">
+            <img src="anglerfish.jpg" alt="anglerfish" class="inventory-image">
+        </div>
+        <div class="inventory-slot" data-item="prayer-potion">
+            <img src="prayerpot.jpg" alt="prayerpot" class="inventory-image">
+        </div>
+        <div class="inventory-slot" data-item="prayer-potion">
+            <img src="prayerpot.jpg" alt="prayerpot" class="inventory-image">
+        </div>
+        <div class="inventory-slot" data-item="anglerfish">
+            <img src="anglerfish.jpg" alt="anglerfish" class="inventory-image">
+        </div>
+        <div class="inventory-slot" data-item="anglerfish">
+            <img src="anglerfish.jpg" alt="anglerfish" class="inventory-image">
+        </div>
+        <div class="inventory-slot" data-item="prayer-potion">
+            <img src="prayerpot.jpg" alt="prayerpot" class="inventory-image">
+        </div>
+        <div class="inventory-slot" data-item="prayer-potion">
+            <img src="prayerpot.jpg" alt="prayerpot" class="inventory-image">
+        </div>
+        <div class="inventory-slot" data-item="anglerfish">
+            <img src="anglerfish.jpg" alt="anglerfish" class="inventory-image">
+        </div>
+        <div class="inventory-slot" data-item="anglerfish">
+            <img src="anglerfish.jpg" alt="anglerfish" class="inventory-image">
+        </div>
+        <div class="inventory-slot" data-item="anglerfish">
+            <img src="anglerfish.jpg" alt="anglerfish" class="inventory-image">
+        </div>
+        <div class="inventory-slot" data-item="anglerfish">
+            <img src="anglerfish.jpg" alt="anglerfish" class="inventory-image">
+        </div>
+        <div class="inventory-slot" data-item="anglerfish">
+            <img src="anglerfish.jpg" alt="anglerfish" class="inventory-image">
+        </div>
+        <div class="inventory-slot" data-item="anglerfish">
+            <img src="anglerfish.jpg" alt="anglerfish" class="inventory-image">
+        </div>
+        <div class="inventory-slot" data-item="anglerfish">
+            <img src="anglerfish.jpg" alt="anglerfish" class="inventory-image">
+        </div>
+        <div class="inventory-slot" data-item="anglerfish">
+            <img src="anglerfish.jpg" alt="anglerfish" class="inventory-image">
+        </div>
+        <div class="inventory-slot" data-item="anglerfish">
+            <img src="anglerfish.jpg" alt="anglerfish" class="inventory-image">
+        </div>
+        <div class="inventory-slot" data-item="anglerfish">
+            <img src="anglerfish.jpg" alt="anglerfish" class="inventory-image">
+        </div>
+        <div class="inventory-slot" data-item="anglerfish">
+            <img src="anglerfish.jpg" alt="anglerfish" class="inventory-image">
+        </div>
+        <div class="inventory-slot" data-item="anglerfish">
+            <img src="anglerfish.jpg" alt="anglerfish" class="inventory-image">
+        </div>
+        <div class="inventory-slot" data-item="anglerfish">
+            <img src="anglerfish.jpg" alt="anglerfish" class="inventory-image">
+        </div>
+        <div class="inventory-slot" data-item="anglerfish">
+            <img src="anglerfish.jpg" alt="anglerfish" class="inventory-image">
+        </div>
+        <div class="inventory-slot" data-item="anglerfish">
+            <img src="anglerfish.jpg" alt="anglerfish" class="inventory-image">
+        </div>
+        <div class="inventory-slot" data-item="anglerfish">
+            <img src="anglerfish.jpg" alt="anglerfish" class="inventory-image">
+        </div>
+        <div class="inventory-slot" data-item="anglerfish">
+            <img src="anglerfish.jpg" alt="anglerfish" class="inventory-image">
+        </div>
+        <div class="inventory-slot" data-item="anglerfish">
+            <img src="anglerfish.jpg" alt="anglerfish" class="inventory-image">
+        </div>
+        <div class="inventory-slot" data-item="anglerfish">
+            <img src="anglerfish.jpg" alt="anglerfish" class="inventory-image">
+        </div>
+        <div class="inventory-slot" data-item="anglerfish">
+            <img src="anglerfish.jpg" alt="anglerfish" class="inventory-image">
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
