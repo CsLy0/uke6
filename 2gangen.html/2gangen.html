@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2Gangen</title>
+</head>
+<body>
+    <h1>2-Gangen</h1>
+    <ul id="2gangenliste"></ul> 
+
+
+    <script>
+    const list = document.getElementById('2gangenliste');
+    for (let i = 1; i <= 10; i++) { //starter med 1, plusser på 1 som gir 2, <= 10 fortsetter bare løkken 10 ganger.
+        const listItem = document.createElement('li'); //liste
+        listItem.textContent = i * 2;
+        list.appendChild(listItem); //listItem er "Child" av list
+    }
+    </script>
+</body>
+</html>
